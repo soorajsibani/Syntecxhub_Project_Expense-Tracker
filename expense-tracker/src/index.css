@@ -1,0 +1,107 @@
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.tracker-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-btn {
+  background-color: white;
+  border: 1px solid #bbb;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: bolder;
+}
+.add-btn:hover{
+  color:white ;
+  background-color: #333;
+}
+
+.total-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.expense-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.exp-title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.exp-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.exp-amount {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-btn.delete:hover { background: #fee2e2; }
+.action-btn.edit:hover { background: #e0f2fe; }
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .input-row { flex-direction: column; }
+}
